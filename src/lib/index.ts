@@ -1,1 +1,2 @@
-export {default as Fa} from "./Fa.svelte";
+export { default as Container } from './IconContainer.svelte';
+export { default as Icon } from './Icon.svelte';

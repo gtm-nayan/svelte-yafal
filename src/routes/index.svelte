@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { Container } from '$lib';
+	import Icon from '$lib/Icon.svelte';
+	import { faFlagCheckered } from '@fortawesome/free-solid-svg-icons';
+</script>
+
+<button>
+	<Container size={6} spin>
+		<Icon icon={faFlagCheckered} flipX flipY translateX={90}/>
+	</Container>
+</button>
