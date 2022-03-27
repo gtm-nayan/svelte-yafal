@@ -18,7 +18,7 @@
 	class={_class_}
 	class:spin
 	class:pulse
-	style:float={pull}
+	style:float={/** @todo: Get these types fixed */ pull}
 	viewBox="0 0 512 512"
 	style:font-size="{size}em"
 	{style}

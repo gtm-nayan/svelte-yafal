@@ -5,7 +5,7 @@
 </script>
 
 <button>
-	<Container size={6} spin>
-		<Icon icon={faFlagCheckered} flipX flipY translateX={90}/>
+	<Container size={6}>
+		<Icon icon={faFlagCheckered} flipX flipY translateX={90} scale={0.5} />
 	</Container>
 </button>

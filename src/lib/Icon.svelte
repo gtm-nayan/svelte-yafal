@@ -55,6 +55,5 @@
 <style>
 	g {
 		transform-origin: var(--ox) var(--oy);
-		transform: translate(var(--x) var(--y)) rotate(var(--r)) scale(var(--sx) var(--sy));
 	}
 </style>
