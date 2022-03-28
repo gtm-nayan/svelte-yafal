@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { Container } from '$lib';
-	import Icon from '$lib/Icon.svelte';
-	import { faFlagCheckered, faWater } from '@fortawesome/free-solid-svg-icons';
+	import { FaSvg, Icon } from '$lib';
+	import { faHeart } from '@fortawesome/free-solid-svg-icons';
 	import * as knobby from 'svelte-knobby';
 
 	const knobs = knobby.panel({
 		animations: {
-			beat: false,
+			beat: true,
 			pulse: false,
 			spin: false
 		},
@@ -37,30 +36,30 @@
 				value: 1
 			},
 			tx: {
-				min: -250,
-				max: 250,
-				step: 0.1,
-				value: 1
+				min: -512,
+				max: 512,
+				step: 1,
+				value: 0
 			},
 			ty: {
-				min: -250,
-				max: 250,
-				step: 0.1,
-				value: 1
+				min: -512,
+				max: 512,
+				step: 1,
+				value: 0
 			}
 		}
 	});
 </script>
 
 <button>
-	<Container
+	<FaSvg
 		size={$knobs.size}
 		beat={$knobs.animations.beat}
 		pulse={$knobs.animations.pulse}
 		spin={$knobs.animations.spin}
 	>
 		<Icon
-			icon={faWater}
+			icon={faHeart}
 			flipX={$knobs.flip.x}
 			flipY={$knobs.flip.y}
 			translateX={$knobs.transforms.tx}
@@ -68,11 +67,12 @@
 			rotate={$knobs.transforms.rotate}
 			scale={$knobs.transforms.scale}
 		/>
-	</Container>
+	</FaSvg>
 </button>
 
 <style>
 	button {
 		padding: 0;
+		color: rgb(255, 71, 132);
 	}
 </style>

@@ -58,16 +58,12 @@
 		--n: min(512 / var(--w), 512 / var(--h));
 		transform-origin: calc(var(--w) * 1px / 2) calc(var(--h) * 1px / 2);
 		/* prettier-ignore */
-		transform: 
-			translate3d(
-				calc((var(--x) + 256 - var(--w)/2) * 1px), 
-				calc((var(--y) + 256 - var(--h)/2) * -1px),
+		transform: translate3d(
+				calc((var(--x) + 256 - var(--w) / 2) * 1px),
+				calc((var(--y) + 256 - var(--h) / 2) * -1px),
 				0
 			)
-			scale(
-				calc(var(--sx) * var(--n)), 
-				calc(var(--sy) * var(--n))
-			)
+			scale(calc(var(--sx) * var(--n)), calc(var(--sy) * var(--n)))
 			rotate(calc(var(--r) * 1deg));
 	}
 </style>
