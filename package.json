@@ -13,6 +13,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
@@ -24,13 +25,11 @@
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.6",
+    "svelte-knobby": "^0.3.4",
     "svelte-preprocess": "^4.10.1",
+    "svelte2tsx": "^0.5.6",
     "tslib": "^2.3.1",
     "typescript": "~4.6.2"
   },
-  "type": "module",
-  "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "5",
-    "svelte-knobby": "^0.3.4"
-  }
+  "type": "module"
 }
