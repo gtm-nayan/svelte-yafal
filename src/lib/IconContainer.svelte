@@ -4,6 +4,7 @@
 	//#region animation
 	export let spin = false;
 	export let pulse = false;
+	export let beat = false;
 	//#endregion animation
 
 	let _class_ = '';
@@ -18,6 +19,7 @@
 	class={_class_}
 	class:spin
 	class:pulse
+	class:beat
 	style:float={/** @todo: Get these types fixed */ pull}
 	viewBox="0 0 512 512"
 	style:font-size="{size}em"
@@ -49,6 +51,16 @@
 	}
 
 	.pulse {
-		animation: pulse 1s infinite steps(8);
+		animation: spin 1s infinite steps(8);
+	}
+
+	.beat {
+		animation: beat 833ms infinite;
+	}
+
+	@keyframes beat {
+		50% {
+			transform: scale(1.1);
+		}
 	}
 </style>
