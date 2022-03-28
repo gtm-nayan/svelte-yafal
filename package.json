@@ -30,6 +30,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "5"
+    "@fortawesome/free-solid-svg-icons": "5",
+    "svelte-knobby": "^0.3.4"
   }
 }
