@@ -30,8 +30,6 @@
 	svg {
 		height: 1em;
 		width: 1em;
-		vertical-align: middle;
-		text-align: center;
 		overflow: visible;
 	}
 
