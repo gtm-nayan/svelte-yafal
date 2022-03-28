@@ -26,13 +26,20 @@
 	let icon: IconDefinition['icon'];
 	$: icon = icon_def.icon;
 
-	$: _scale_ = `scale(${scale * (flipX ? -1 : 1)} ${scale * (flipY ? -1 : 1)})`;
+	function adjusted_scale(scale: number): number {
+		return scale * Math.min(512 / icon[0], 512 / icon[1]) ?? 1;
+	}
+
+	$: _scale_ = `scale(${adjusted_scale(scale) * (flipX ? -1 : 1)} ${
+		adjusted_scale(scale) * (flipY ? -1 : 1)
+	})`;
 </script>
 
 <g
-	transform="translate({translateX} {translateY}) {_scale_} rotate({rotate})"
-	style:--ox={icon[0] / 2}
-	style:--oy={icon[1] / 2}
+	transform="translate({translateX + (256 - icon[0] / 2)} {translateY +
+		(256 - icon[1] / 2)}) {_scale_} rotate({rotate})"
+	style:--ox={icon[0]}
+	style:--oy={icon[1]}
 >
 	{#if typeof icon[4] == 'string'}
 		<path d={icon[4]} fill={color || primaryColor || 'currentColor'} />
@@ -53,6 +60,6 @@
 
 <style>
 	g {
-		transform-origin: var(--ox) var(--oy);
+		transform-origin: calc(var(--ox) * 1px / 2) calc(var(--oy) * 1px / 2);
 	}
 </style>
