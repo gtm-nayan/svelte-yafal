@@ -5,8 +5,7 @@
 	export let flipX = false;
 	export let flipY = false;
 	export let rotate = 0;
-	export let _scale_ = 1;
-	export { _scale_ as scale };
+	export let scale = 1;
 	export let translateX = 0;
 	export let translateY = 0;
 	//#endregion transforms
@@ -27,11 +26,11 @@
 	let icon: IconDefinition['icon'];
 	$: icon = icon_def.icon;
 
-	$: scale = `scale(${_scale_ * (flipX ? -1 : 1)} ${_scale_ * (flipY ? -1 : 1)})`;
+	$: _scale_ = `scale(${scale * (flipX ? -1 : 1)} ${scale * (flipY ? -1 : 1)})`;
 </script>
 
 <g
-	transform="translate({translateX} {translateY}) {scale} rotate({rotate})"
+	transform="translate({translateX} {translateY}) {_scale_} rotate({rotate})"
 	style:--ox={icon[0] / 2}
 	style:--oy={icon[1] / 2}
 >
