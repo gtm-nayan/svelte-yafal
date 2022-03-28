@@ -1,6 +1,4 @@
 <script lang="ts">
-	import type { Nullish } from './types';
-
 	//#region animation
 	export let spin = false;
 	export let pulse = false;
@@ -11,7 +9,7 @@
 	export { _class_ as class };
 	export let style = '';
 
-	export let pull: 'right' | 'left' | Nullish = null;
+	export let pull: 'right' | 'left' | null = null;
 	export let size = 1;
 </script>
 

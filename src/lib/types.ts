@@ -15,14 +15,3 @@ export interface IconDefinition extends IconLookup {
 		IconPathData // svgPathData
 	];
 }
-
-export interface Transform {
-	scale?: number;
-	x?: number;
-	y?: number;
-	rotate?: number;
-	flipX?: boolean;
-	flipY?: boolean;
-}
-
-export type Nullish = null | undefined;
