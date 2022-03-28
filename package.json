@@ -1,6 +1,6 @@
 {
   "name": "svelte-yafal",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -13,6 +13,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@changesets/cli": "^2.22.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
