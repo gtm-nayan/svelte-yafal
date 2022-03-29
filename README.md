@@ -11,4 +11,60 @@ Minimal yet meaningful abstractions for Fontawesome icons in Svelte.
 - Easy to combine icons
 - Low overhead, based on the tree-shakeable @fortawesome/ packages
 
-Features are added by request.
+### Installation
+
+```sh
+npm i svelte-yafal -D
+```
+
+### Usage
+
+#### Basics
+
+```html
+<script>
+	import { FaSvg, Icon } from 'svelte-yafal';
+	import { faFlag } from '@fortawesome/free-solid-svg-icons';
+</script>
+
+<FaSvg><Icon icon="{faFlag}" size="{3}" /></FaSvg>
+```
+
+#### Animations
+
+```html
+<FaSvg>
+	<Icon icon="{faFlag}" />
+</FaSvg>
+```
+
+#### Transformations
+
+```html
+<FaSvg>
+	<Icon
+		icon="{faFlag}"
+		translateX="{256}"
+		translateY="{128}"
+		scale="{0.25}"
+		rotate="{90}"
+		flipX
+		flipY
+	/>
+</FaSvg>
+```
+
+#### Layers
+
+```html
+<FaSvg>
+	<Icon icon="{faCalendar}" />
+	<Icon icon="{faSun}" scale="{0.2}" />
+	<!-- The units are in the frame of reference of the SVG -->
+	<text x="100" y="450" font-size="250">23</text>
+</FaSvg>
+```
+
+### Contributions
+
+Feature requests and PRs are welcome. New features will only be added upon request so as to not bloat things.
