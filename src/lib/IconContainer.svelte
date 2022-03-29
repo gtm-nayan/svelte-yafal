@@ -19,14 +19,14 @@
 </script>
 
 <svg
-	class={_class_}
 	class:spin
 	class:pulse
 	class:beat
+	class={_class_}
 	style:float={/** @todo: Get these types fixed */ pull}
-	viewBox="0 0 512 512"
 	style:font-size="{size}em"
 	{style}
+	viewBox="0 0 512 512"
 >
 	<slot />
 </svg>
