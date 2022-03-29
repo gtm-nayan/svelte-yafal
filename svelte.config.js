@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import { resolve } from 'node:path';
 
@@ -16,6 +16,9 @@ const config = {
 					'svelte-yafal': resolve('src/lib'),
 				},
 			},
+		},
+		prerender: {
+			default: true,
 		},
 	},
 };
