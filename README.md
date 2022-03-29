@@ -60,10 +60,11 @@ npm i svelte-yafal -D
 <FaSvg>
 	<Icon icon="{faCalendar}" />
 	<Icon icon="{faSun}" scale="{0.2}" />
-	<!-- The units are in the frame of reference of the SVG -->
 	<text x="100" y="450" font-size="250">23</text>
 </FaSvg>
 ```
+The units used for positioning will be in the frame of reference of the SVG.
+x=0 would start the text from the left edge, whereas 512 would push it beyond the right edge.
 
 ### Contributions
 
