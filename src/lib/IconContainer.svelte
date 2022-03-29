@@ -10,6 +10,11 @@
 	export let style = '';
 
 	export let pull: 'right' | 'left' | null = null;
+	/**
+	 * Defines the box size of the svg and the initial size of all icons within.
+	 * @default
+	 * {1} Same size as the font of the parent.
+	 */
 	export let size = 1;
 </script>
 

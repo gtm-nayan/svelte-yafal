@@ -2,11 +2,32 @@
 	import type { IconDefinition } from './types';
 
 	//#region transforms
+	/** Flip the icon horizontally. */
 	export let flipX = false;
+	/** Flip the icon vertically. */
 	export let flipY = false;
+	/** Rotation of the icon in degrees. */
 	export let rotate = 0;
+	/**
+	 * Scale of the icon.
+	 * @default {1}
+	 */
 	export let scale = 1;
+	/**
+	 * Move the icon horizontally
+	 *
+	 * positive: ➝
+	 *
+	 * negative 🠔
+	 */
 	export let translateX = 0;
+	/**
+	 * Move the icon vertically.
+	 *
+	 * positive: 🠕
+	 *
+	 * negative 🠗
+	 */
 	export let translateY = 0;
 	//#endregion transforms
 
@@ -20,6 +41,22 @@
 	export let secondaryOpacity: number = 0.25;
 	//#endregion colors
 
+	/**
+	 * An icon definition of the form:
+	 * ```ts
+	 * interface IconDefinition {
+	 *		icon: [
+	 *			number, // width
+	 *			number, // height
+	 *			string[], // ligatures
+	 *			string, // unicode
+	 *			IconPathData // svgPathData
+	 *		];
+	 * }
+	 * ```
+	 *
+	 * svgPathData can be either a single string or a [string, string] tuple in case of duotone icons.
+	 */
 	let icon_def: IconDefinition;
 	export { icon_def as icon };
 

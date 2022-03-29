@@ -1,6 +1,12 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"strict": true
+		"strict": true,
+		"paths": {
+			"$lib/*": ["src/lib/*"],
+			"$lib": ["src/lib"],
+			"svelte-yafal/*": ["src/lib/*"],
+			"svelte-yafal": ["src/lib"]
+		}
 	}
 }
