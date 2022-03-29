@@ -33,8 +33,8 @@ npm i svelte-yafal -D
 #### Animations
 
 ```html
-<FaSvg>
-	<Icon icon="{faFlag}" />
+<FaSvg beat>
+	<Icon icon="{faHeart}" />
 </FaSvg>
 ```
 
@@ -63,6 +63,7 @@ npm i svelte-yafal -D
 	<text x="100" y="450" font-size="250">23</text>
 </FaSvg>
 ```
+
 The units used for positioning will be in the frame of reference of the SVG.
 x=0 would start the text from the left edge, whereas 512 would push it beyond the right edge.
 
