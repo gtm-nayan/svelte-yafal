@@ -25,10 +25,7 @@
 
 <style>
 	pre {
-		background-color: var(--surface-3);
 		max-inline-size: none;
 		overflow-x: auto;
-		padding: var(--size-fluid-1);
-		border-radius: var(--radius-conditional-3);
 	}
 </style>

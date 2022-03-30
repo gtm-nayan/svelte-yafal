@@ -37,13 +37,17 @@
 	}
 
 	.waffle {
-		color: var(--brand-color);
 		font-size: var(--size-fluid-8);
 		margin-right: var(--size-fluid-4);
 	}
 
 	h1,
+	.waffle,
 	a {
 		color: var(--brand-color);
+	}
+
+	pre {
+		padding: var(--size-1);
 	}
 </style>
