@@ -16,6 +16,6 @@
 <style>
 	text {
 		font-size: 250px;
-		color: white;
+		fill: white;
 	}
 </style>

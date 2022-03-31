@@ -45,9 +45,11 @@
 	.waffle,
 	a {
 		color: var(--brand-color);
+		font-weight: 600;
 	}
 
 	pre {
 		padding: var(--size-1);
+		user-select: all;
 	}
 </style>
