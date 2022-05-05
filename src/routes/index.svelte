@@ -10,7 +10,7 @@
 			<h1>svelte-yafal</h1>
 			<p>Minimal yet meaningful abstractions for fontawesome icons in Svelte.</p>
 			<pre><code>npm i svelte-yafal -D</code></pre>
-			<a href="https://svelte.dev/repl/cc3a670ad52d4633ab682f3dd433143d?version=3">REPL</a>
+			<a href="https://svelte.dev/repl/9a9d0912fe7c4a47a43ce9f532d8e589?version=3">REPL</a>
 		</div>
 		<div class="waffle">
 			<FaSvg><Icon icon={faStroopwafel} /></FaSvg>

@@ -2,7 +2,7 @@
 
 Minimal yet meaningful abstractions for Fontawesome icons in Svelte.
 
-[REPL](https://svelte.dev/repl/cc3a670ad52d4633ab682f3dd433143d?version=3)
+[REPL](https://svelte.dev/repl/9a9d0912fe7c4a47a43ce9f532d8e589?version=3)
 
 ### Features
 
