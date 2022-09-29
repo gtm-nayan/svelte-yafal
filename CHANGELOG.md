@@ -1,5 +1,11 @@
 # svelte-yafal
 
+## 0.1.2
+
+### Patch Changes
+
+- allow fass prefix
+
 ## 0.1.1
 
 ### Patch Changes
