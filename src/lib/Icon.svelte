@@ -32,13 +32,13 @@
 	//#endregion transforms
 
 	//#region colors
-	export let color: string = '';
-	export let primaryColor: string = '';
-	export let secondaryColor: string = '';
+	export let color = '';
+	export let primaryColor = '';
+	export let secondaryColor = '';
 
 	export let swapOpacity = false;
-	export let primaryOpacity: number = 0.75;
-	export let secondaryOpacity: number = 0.25;
+	export let primaryOpacity = 0.75;
+	export let secondaryOpacity = 0.25;
 	//#endregion colors
 
 	/**

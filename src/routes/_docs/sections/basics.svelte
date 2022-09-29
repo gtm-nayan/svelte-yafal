@@ -4,5 +4,5 @@
 	import { faFlag } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<FaSvg size={3}><Icon icon={faFlag} color="var(--blue-3)"/></FaSvg>
+<FaSvg size={3}><Icon icon={faFlag} color="var(--blue-3)" /></FaSvg>
 <!-- __END_VISIBLE__ -->
